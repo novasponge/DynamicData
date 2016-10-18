@@ -1,5 +1,3 @@
-require 'byebug'
-
 class AttrAccessorObject
   def self.my_attr_accessor(*names)
     names.each do |name|
@@ -8,8 +6,8 @@ class AttrAccessorObject
         instance_variable_get("@#{name}")
       end
 
-      name_ = name + '='
-      define_method(name_) do |arg = nil|
+      _name = name + '='
+      define_method(_name) do |arg = nil|
         instance_variable_set("@#{name}", arg)
       end
     end
