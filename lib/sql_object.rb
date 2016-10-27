@@ -1,6 +1,5 @@
 require_relative 'db_connection'
 require 'active_support/inflector'
-require 'byebug'
 
 class SQLObject
   def self.columns
@@ -111,6 +110,15 @@ class SQLObject
         #{set}
       WHERE
         id = ?
+    SQL
+  end
+
+  def destroy
+    DBConnection.execute(<<-SQL, attribute_values[0])
+    DELETE FROM
+      #{self.class.table_name}
+    WHERE
+      id = ?
     SQL
   end
 
