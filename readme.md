@@ -1,6 +1,6 @@
 # DynamicData
 
-DynamicData is a lightweight SQLite3 ORM(Object Relation Mapping).
+DynamicData is a lightweight SQLite3 ORM(Object Relation Mapping) framework.
 
 DynamicData uses SQL queries and meta programming to connect models to the information in your database. Through APIs provided in DynamicData, you can bridge the models and perform CRUD operations easily.
 
