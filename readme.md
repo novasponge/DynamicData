@@ -1,17 +1,19 @@
 # DynamicData
 
-DynamicData is a lightweight SQLite3 ORM(Object Relation Mapping) framework.
+DynamicData is a lightweight SQLite3 ORM(Object Relation Mapping).
 
-DynamicData uses SQL queries and meta programming to connect models to the information in your database. Through methods that DynamicData provides, you can perform CRUD operations on your database tables.
+DynamicData uses SQL queries and meta programming to connect models to the information in your database. Through APIs provided in DynamicData, you can bridge the models and perform CRUD operations easily.
 
 ## Getting Started
 
+* Upgrade your ruby version to 2.3.1.
 * Clone this repo into your project directory.
 * Move your project into model folder.
 * Bundle install.
-* Require 'associatable_advanced' in your project.
+* Require 'associatable' in your project.
+
 ```ruby
-  require_relative '../lib/associatable_advanced'
+  require_relative '../lib/associatable'
 ```
 * Have your class inherit from "SQLObject".
 ```ruby
