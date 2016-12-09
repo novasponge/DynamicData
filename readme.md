@@ -109,7 +109,7 @@ class Task < SQLObject
     :user, #source
 end
 ```
-* Retrive record
+* Retrieve record
 ```ruby
 list = User.find(1).lists
 # [#<List:0x007fa6fca13448 @attributes={:id=>1, :name=>"Shopping", :author_id=>1}>,
